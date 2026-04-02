@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"HappySkin Team"
+		]
+	},
+	"happyskin-desc": "HappySkin - A clean, black-and-white MediaWiki skin",
+	"happyskin-toggle-dark-mode": "Toggle dark mode",
+	"happyskin-menu": "Menu"
+}

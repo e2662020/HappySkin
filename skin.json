@@ -1,0 +1,60 @@
+{
+	"name": "HappySkin",
+	"type": "skin",
+	"author": [
+		"HappySkin Team"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:HappySkin",
+	"descriptionmsg": "happyskin-desc",
+	"license-name": "GPL-2.0-or-later",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"ValidSkinNames": {
+		"HappySkin": {
+			"class": "MediaWiki\\Skin\\HappySkin\\HappySkin",
+			"args": []
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Skin\\HappySkin\\": "includes/"
+	},
+	"MessagesDirs": {
+		"HappySkin": [
+			"i18n"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "HappySkin"
+	},
+	"ResourceModules": {
+		"skins.happyskin": {
+			"class": "ResourceLoaderSkinModule",
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/happyskin.less"
+			]
+		},
+		"skins.happyskin.js": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"scripts": [
+				"resources/happyskin.js"
+			]
+		}
+	},
+	"config": {
+		"HappySkinThemeColor": {
+			"value": "0.7 0.1 240",
+			"description": "Primary theme color in oklch format (lightness chroma hue)",
+			"public": true
+		}
+	},
+	"manifest_version": 2
+}
